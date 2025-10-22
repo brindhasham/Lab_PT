@@ -8,4 +8,6 @@
 
  -- **[Windows Service Exploiter](https://github.com/brindhasham/Lab_PT/tree/main/Windows%20Service%20Exploiter)** 
 
+ -- **[Automated Command-and-Control (C2) Simulation Tool](https://github.com/brindhasham/Lab_PT/tree/main/Automated%20Command-and-Control%20(C2)%20Simulation%20Tool)**
+
 
