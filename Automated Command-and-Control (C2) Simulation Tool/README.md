@@ -13,4 +13,23 @@
 - **Agent logs activity to  for forensic traceability.**
 
 ---
+### Target machine Linux(Ubuntu 14.04)
 
+---
+
+## Working
+
+### Post-Exploitation
+
+1. **This sceanario is conduction in post-exploitation phase where the attacker has gained remote access and root privileges in the target system**
+2. **C2 is a method that cybercriminals use to communicate with compromised devices. In a C&C attack, an attacker uses a server to send commands to — and receive data from — computers compromised, which is known as C2 server.**
+3. **The attacker can use the server to perform various malicious actions on the target network, such as data discovery, data exfiltration, malware injection, or denial of service attacks.**
+4. **To create a C2 channel, this channel should have following features:**
+   - **Pull command from attacker's server using HTTP GET**
+   - **Strips headers**
+   - **Execute commands**
+   - **Capture output**
+   - **Send results using HTTP POST with correct content-length**
+   - **Use Netcat for portabilty**
+   - **Sleeps randomly to simulate real polling behavior**
+5. 
