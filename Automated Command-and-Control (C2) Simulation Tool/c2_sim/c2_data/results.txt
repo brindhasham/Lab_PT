@@ -1,1 +1,16 @@
+[2025-10-22 09:12:55 UTC] /automation/agent.sh: line 23: Content-Type:: command not found
+/automation/agent.sh: line 24: Content-Length:: command not found
+uid=0(root) gid=0(root) groups=0(root)
+total 28
+drwx------  3 root root 4096 Oct 22 06:06 .
+drwxr-xr-x 24 root root 4096 Oct 17 06:38 ..
+-rw-------  1 root root 1902 Oct 22 06:21 .bash_history
+-rw-r--r--  1 root root 3106 Feb 20  2014 .bashrc
+drwxr-xr-x  2 root root 4096 Oct 29  2020 .m2
+-rw-r--r--  1 root root  140 Feb 20  2014 .profile
+-rw-r--r--  1 root root   66 Oct 17 07:33 .selected_editor
+root
+root:x:0:0:root:/root:/bin/bash
+boba_fett:x:1121:100::/home/boba_fett:/bin/bash
+
 
