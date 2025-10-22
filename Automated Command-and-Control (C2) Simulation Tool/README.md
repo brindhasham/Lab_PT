@@ -13,6 +13,7 @@
 - **Agent logs activity to for forensic traceability.**
 
 ---
+
 ### Target machine Linux(Ubuntu 14.04)
 
 ---
@@ -43,8 +44,12 @@
     - **Handles headers, content length, and response codes properly**
     - **Silences noisy logs for stealth and clarity**
     - **Auto-creates the working directory and files**
-11. **Now I will grant execute permission to this pythong script by `chmod +x` [server.py](https://github.com/brindhasham/Lab_PT/blob/main/Automated%20Command-and-Control%20(C2)%20Simulation%20Tool/server.py)**
+11. **Now I will grant execute permission to this python script by `chmod +x` [server.py](https://github.com/brindhasham/Lab_PT/blob/main/Automated%20Command-and-Control%20(C2)%20Simulation%20Tool/server.py)**
 12. **`python3` [server.py](https://github.com/brindhasham/Lab_PT/blob/main/Automated%20Command-and-Control%20(C2)%20Simulation%20Tool/server.py)**
 13. **When the target reboots, and we loose out initial access to the target system, we now receive responses from the commands we pass to commands.txt**
 14. **The results will be stores in results.txt**
 15. **The agent logs will be stored under tmp directory as agent_nc.log**
+
+---
+
+### This project shows successful establiment of command and control on target
