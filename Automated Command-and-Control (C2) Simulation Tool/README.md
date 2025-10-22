@@ -14,7 +14,7 @@
 
 ---
 
-### Target machine Linux(Ubuntu 14.04)
+### Target machine: Linux(Ubuntu 14.04)
 
 ---
 
