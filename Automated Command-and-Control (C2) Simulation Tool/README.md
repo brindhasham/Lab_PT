@@ -10,7 +10,7 @@
 - **Python based C2 HTTP server is created on the attacker side for communication with the target**
 - **Agent reaches to the attacker server for every 30-60 seconds to pull commands from commands.txt**
 - **The results are stores in results.txt with timestamps**
-- **Agent logs activity to  for forensic traceability.**
+- **Agent logs activity to for forensic traceability.**
 
 ---
 ### Target machine Linux(Ubuntu 14.04)
@@ -32,4 +32,19 @@
    - **Send results using HTTP POST with correct content-length**
    - **Use Netcat for portabilty**
    - **Sleeps randomly to simulate real polling behavior**
-5. 
+5. **The [agent.sh](https://github.com/brindhasham/Lab_PT/blob/main/Automated%20Command-and-Control%20(C2)%20Simulation%20Tool/agent.sh) with above features is uploaded to the target system**
+6. **Now I created a cronfile in the target using shell to via command `echo "@reboot /home/agent.sh &" > mycron`**
+7. **To load it into crontab `crontab mycron`**
+8. **I can verify it by `crotab -l` to list the added cronjob**
+9. **I will make sure cron is running by `sudo systemctl status cron` if not I will use `sudo systemctl start cron`**
+10. **Now I made a server on my attacker machine that is compatible with this agent. It has following featurs**
+    - **Serves on GET**
+    - **Appends POST bodies to with UTC timestamps**
+    - **Handles headers, content length, and response codes properly**
+    - **Silences noisy logs for stealth and clarity**
+    - **Auto-creates the working directory and files**
+11. **Now I will grant execute permission to this pythong script by `chmod +x` [server.py](https://github.com/brindhasham/Lab_PT/blob/main/Automated%20Command-and-Control%20(C2)%20Simulation%20Tool/server.py)**
+12. **`python3` [server.py](https://github.com/brindhasham/Lab_PT/blob/main/Automated%20Command-and-Control%20(C2)%20Simulation%20Tool/server.py)**
+13. **When the target reboots, and we loose out initial access to the target system, we now receive responses from the commands we pass to commands.txt**
+14. **The results will be stores in results.txt**
+15. **The agent logs will be stored under tmp directory as agent_nc.log**
