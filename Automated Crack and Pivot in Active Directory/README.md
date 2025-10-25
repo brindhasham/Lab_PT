@@ -83,5 +83,5 @@
 
 ### This is the idea workflow for script creation.
 
-**The script can be access [here]()**
+**The script can be accessed [here](https://github.com/brindhasham/Lab_PT/blob/main/Automated%20Crack%20and%20Pivot%20in%20Active%20Directory/C2P.sh)**
 
