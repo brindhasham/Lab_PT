@@ -91,7 +91,7 @@
 ## Working
 
 1. **Make sure the client and server are running on the same network as attacker machine**
-2. **On attacker machine run this code `sudo ./`[C2P.sh](https://github.com/brindhasham/Lab_PT/blob/main/Automated%20Crack%20and%20Pivot%20in%20Active%20Directory/C2P.sh) `eth0 10.10.10.131 /home/kali/testhash.txt` (any custom wordlist can be used, if not added, the script automatically used rockyou.txt for hashcat)**
+2. **On attacker machine run this code `sudo ./`[C2P.sh](https://github.com/brindhasham/Lab_PT/blob/main/Automated%20Crack%20and%20Pivot%20in%20Active%20Directory/C2P.sh) `eth0 10.10.10.131 /home/kali/testhash.txt` (any custom wordlist can be used, if not added, the script automatically uses rockyou.txt for hashcat)**
 3. **On the Windows client, simulate user activity (e.g., accessed a non-existent share: `\\<kali_ip>\fake`).**
 4. **The script runs the tools and displays output as follows. Complete output of the test is available [here](https://github.com/brindhasham/Lab_PT/blob/main/Automated%20Crack%20and%20Pivot%20in%20Active%20Directory/output.txt)**
 
