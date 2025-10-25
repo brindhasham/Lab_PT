@@ -1,0 +1,2 @@
+NTLMv2-SSP
+NTLMv2
