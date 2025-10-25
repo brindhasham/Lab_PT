@@ -10,6 +10,6 @@
 
  -- **[Automated Command-and-Control (C2) Simulation Tool](https://github.com/brindhasham/Lab_PT/tree/main/Automated%20Command-and-Control%20(C2)%20Simulation%20Tool)**
 
- -- **[Automated Crack and Pivot in Active Directory](https://github.com/brindhasham/Lab_PT/tree/main/Automated%20Crack%20and%20Pivot%20in%20Active%20Directory)
+ -- **[Automated Crack and Pivot in Active Directory](https://github.com/brindhasham/Lab_PT/tree/main/Automated%20Crack%20and%20Pivot%20in%20Active%20Directory)**
 
 
