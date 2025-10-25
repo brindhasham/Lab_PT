@@ -79,7 +79,7 @@
 - **Once hashes are captured, it should extract from Responder.db using sqllite3 and crack hashes with Hashcat and the potfile will store NetNTLMv2 hashes and their plaintext passwords**
 - **Now for NT hash computation, we have potfile with plaintext password, we will convert this plaintext to UTF-16LE using iconv and hash it with MD4 using openssl and extracts the hash value with awk. Note this NT hashes will be stored in cracked_hashes file**
 - **We will test the the validity of the NT hash by using Crackmapexec to check the accessibility to the target**
-- **If authentication succeeds, the execute custom command using crackmapexec**
+- **If authentication succeeds, then execute custom command using crackmapexec**
 
 ### This is the idea workflow for script creation.
 
