@@ -98,3 +98,11 @@
 5. ![](https://github.com/brindhasham/Lab_PT/blob/main/Automated%20Crack%20and%20Pivot%20in%20Active%20Directory/Screensnips/output1.png)
    ![](https://github.com/brindhasham/Lab_PT/blob/main/Automated%20Crack%20and%20Pivot%20in%20Active%20Directory/Screensnips/output2.png)
    ![](https://github.com/brindhasham/Lab_PT/blob/main/Automated%20Crack%20and%20Pivot%20in%20Active%20Directory/Screensnips/output3.png)
+
+6. **The output files can here accessed here**
+   - [captured_hashes](https://github.com/brindhasham/Lab_PT/blob/main/Automated%20Crack%20and%20Pivot%20in%20Active%20Directory/demo_output/captured_hashes.txt)
+   - [cracked_hashes](https://github.com/brindhasham/Lab_PT/blob/main/Automated%20Crack%20and%20Pivot%20in%20Active%20Directory/demo_output/cracked_hashes.txt)
+   - [hash_types](https://github.com/brindhasham/Lab_PT/blob/main/Automated%20Crack%20and%20Pivot%20in%20Active%20Directory/demo_output/hash_types.txt)
+   - [hashcat.potfile](https://github.com/brindhasham/Lab_PT/blob/main/Automated%20Crack%20and%20Pivot%20in%20Active%20Directory/demo_output/hashcat.potfile)
+   - [lateral_log.txt](https://github.com/brindhasham/Lab_PT/blob/main/Automated%20Crack%20and%20Pivot%20in%20Active%20Directory/demo_output/lateral_log.txt)
+   ### This concludes successful pass the hash attack
