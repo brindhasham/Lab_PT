@@ -22,7 +22,7 @@
 
 ### Post-Exploitation
 
-1. **This sceanario is conduction in post-exploitation phase where the attacker has gained remote access and root privileges in the target system**
+1. **This sceanario is conducted in post-exploitation phase where the attacker has gained remote access and root privileges in the target system**
    ![](https://github.com/brindhasham/Lab_PT/blob/main/Automated%20Command-and-Control%20(C2)%20Simulation%20Tool/Screensnips/sessions.png)
 2. **C2 is a method that cybercriminals use to communicate with compromised devices. In a C&C attack, an attacker uses a server to send commands to — and receive data from — computers compromised, which is known as C2 server.**
 3. **The attacker can use the server to perform various malicious actions on the target network, such as data discovery, data exfiltration, malware injection, or denial of service attacks.**
