@@ -87,3 +87,5 @@
     
      
  ### This concludes successful custom creation of payload, obfuscation and data-exfiltration using reverse shell
+
+ ## Note: Due to ethical reasons, I have not included the code for payload.sh. Code available only on demand
