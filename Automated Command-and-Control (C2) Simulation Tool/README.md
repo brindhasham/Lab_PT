@@ -10,7 +10,7 @@
 - **Python based C2 HTTP server is created on the attacker side for communication with the target**
 - **Agent reaches to the attacker server for every 30-60 seconds to pull commands from commands.txt**
 - **The results are stores in results.txt with timestamps**
-- **Agent logs activity to for forensic traceability.**
+- **Agent logs activity for forensic traceability.**
 
 ---
 
