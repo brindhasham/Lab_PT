@@ -12,4 +12,4 @@
 
  -- **[Automated Crack and Pivot in Active Directory](https://github.com/brindhasham/Lab_PT/tree/main/Automated%20Crack%20and%20Pivot%20in%20Active%20Directory)**
 
-
+-- **[Custom Phishing Payload with Anti-Detection Features](https://github.com/brindhasham/Lab_PT/tree/main/Custom%20Phishing%20Payload%20with%20Anti-Detection%20Features)**
