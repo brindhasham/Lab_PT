@@ -43,4 +43,4 @@ Over the past year, I’ve been focused on mastering the fundamentals of penetra
 ---
 
 ### 📫 Connect with Me
-- 💼 [LinkedIn](https://linkedin.com/in/yourprofile)  
+- [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin&logoColor=white)](www.linkedin.com/in/s-b-879871139)
