@@ -19,8 +19,8 @@
 ---
 
 ### Machines used:
-- **Windows Server Domain controller with Active Directory configured(assined IP in lab= 10.10.10.131)**
-- **Windows client joined to the domain.(assined IP in lab= 10.10.10.130)**
+- **Windows Server Domain controller with Active Directory configured(assigned IP in lab= 10.10.10.131)**
+- **Windows client joined to the domain.(assigned IP in lab= 10.10.10.130)**
 - **Kali Linux (attacker)**
 
 ---
