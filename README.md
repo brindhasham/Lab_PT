@@ -38,3 +38,9 @@ Over the past year, I’ve been focused on mastering the fundamentals of penetra
 - **Practicing advanced labs on **TryHackMe** & **Hack The Box****
 - **Studying **Web App Security** & **Active Directory Exploitation/Defense****
 - **Preparing for **OSCP** (Offensive Security Certified Professional)-focused on manual exploitation, privilege escalation, and reporting**
+
+
+---
+
+### 📫 Connect with Me
+- 💼 [LinkedIn](https://linkedin.com/in/yourprofile)  
