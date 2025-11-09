@@ -1,8 +1,16 @@
-# My Pentesting Lab Projects
+#  Hi, I'm Brindha
 
-**Welcome to my cybersecurity lab showcase. I'm eJPT certified and Security+ certified, with a passion for exploit chaining, privilege escalation, and forensic simulation.**
+ **Aspiring Junior Penetration Tester | eJPT | CompTIA Security+**
 
-#  Projects
+**I'm passionate about ethical hacking, vulnerability research, and building secure systems.  
+Over the past year, I’ve been focused on mastering the fundamentals of penetration testing through labs, projects, and real-world simulations in controlled environments.**
+
+###  Certifications
+-  **eJPT – INE (2025)**
+-  **CompTIA Security+ – CompTIA (2025)**
+
+
+# Featured Projects
 
  -- **[OWASP Top 10 Python-based vulnerability scanner](https://github.com/brindhasham/Lab_PT/tree/main/OWASP%20Top%2010%20Python-based%20vulnerability%20scanner%20)**
 
@@ -13,3 +21,18 @@
  -- **[Automated Crack and Pivot in Active Directory](https://github.com/brindhasham/Lab_PT/tree/main/Automated%20Crack%20and%20Pivot%20in%20Active%20Directory)**
 
 -- **[Custom Phishing Payload with Anti-Detection Features](https://github.com/brindhasham/Lab_PT/tree/main/Custom%20Phishing%20Payload%20with%20Anti-Detection%20Features)**
+
+---
+
+### Tech Stack
+**Languages: Python, Bash, PowerShell**
+**Tools: Nmap, Burp Suite, Metasploit, Wireshark, BloodHound, Nessus, Responder**  
+**Platforms: Kali Linux, Windows, Windows Server, Ubuntu**  
+**Other: Git, Docker, VirtualBox**
+
+---
+
+### Current Focus
+- **Practicing advanced labs on **TryHackMe** & **Hack The Box****
+- **Studying **Web App Security** & **Active Directory Exploitation/Defense****
+- **Preparing for **OSCP** (Offensive Security Certified Professional)-focused on manual exploitation, privilege escalation, and reporting**
