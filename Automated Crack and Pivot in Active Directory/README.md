@@ -43,7 +43,7 @@
   5. 	**MDNS (Multicast DNS, mostly for Bonjour/Apple-like services)**
 - **If DNS fails (e.g., the name doesn’t exist or the server is offline), Windows falls back to LLMNR/NBT-NS/MDNS**
 - **By default, even ADDCs have LLMNR and NBT-NS enabled, unless explicitly disabled**
-- **My Idea of for this script originates here to exploit this vulnerability where the system is not hardened by the system administrator, which can cause serious issues in real life scenarios**
+- **My Idea for this script originates here to exploit this vulnerability where the system is not hardened by the system administrator, which can cause serious issues in real life scenarios**
 - **DNS fails → LLMNR/NBT-NS kicks in --->Responder poisons the response --->ADDC sends NTLMv2 auth to Responder**
 
 ---
