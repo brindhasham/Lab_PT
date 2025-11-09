@@ -44,4 +44,5 @@ Over the past year, I’ve been focused on mastering the fundamentals of penetra
 
 ###  Connect with Me
 - **[![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/s-b-879871139)**
+- **[![GitHub](https://img.shields.io/badge/GitHub-Follow-black?style=for-the-badge&logo=github)](https://github.com/brindhasham/Lab_PT)**
 
