@@ -7,11 +7,12 @@ Over the past year, I’ve been focused on mastering the fundamentals of penetra
 
 ###  Certifications
 -  **[![eJPT – INE](https://img.shields.io/badge/eJPT-Certified-2A81CB?style=for-the-badge&logo=Hack%20The%20Box&logoColor=white)](https://certs.ine.com/profile/sbrindha108174/wallet)**
+-  **[![API Security Fundamentals](https://img.shields.io/badge/API%20Security%20Fundamentals-'25%20Certified-007ACC?style=for-the-badge&logo=dependabot&logoColor=white)](https://www.credly.com/badges/d29a00af-6771-4c47-b2c4-9d52a3cd66bd)**
 -  **[![CompTIA Security+](https://img.shields.io/badge/CompTIA%20Security%2B-Certified-EE4C2C?style=for-the-badge&logo=comptia&logoColor=white)](https://www.credly.com/badges/f982711b-7c67-4212-97dc-46b6137bb097)**
 -  **[![Google Cybersecurity Professional Certificate V2](https://img.shields.io/badge/Google%20Cybersecurity%20Professional%20Certificate-Certified-4285F4?style=for-the-badge&logo=google&logoColor=white)](https://www.credly.com/badges/879df111-9152-4cad-8c4c-f2f3884de370)**
 -  **![OSCP](https://img.shields.io/badge/OSCP-In%20Progress-orange?style=for-the-badge&logo=offensive%20security&logoColor=white)**
 
-
+### Badges: [Credly](https://www.credly.com/users/sbrindha)
 # Featured Projects
 
  -- **[OWASP Top 10 Python-based vulnerability scanner](https://github.com/brindhasham/Lab_PT/tree/main/OWASP%20Top%2010%20Python-based%20vulnerability%20scanner%20)**
