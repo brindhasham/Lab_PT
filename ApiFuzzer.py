@@ -16,4 +16,4 @@ def fuzz_loop():
 if __name__ == "__main__":
     fuzz_loop()
 
-#Usage: $cat wordlist.txt | python3 fuzzer.py 10.10.154.20
+#Usage: $cat wordlist.txt | python3 fuzzer.py <target_IP>
