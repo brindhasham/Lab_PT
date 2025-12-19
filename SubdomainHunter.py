@@ -1,7 +1,7 @@
 import sys
 import requests
 if len(sys.argv) < 3:
-    print("Usage: python3 fuzzer.py <target_ip> <wordlist_file>")
+    print("Usage: python3 hunter.py <target_ip> <wordlist_file>")
     sys.exit()
 target_ip = sys.argv[1]
 wordlist_file = sys.argv[2]
