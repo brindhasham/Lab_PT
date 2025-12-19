@@ -16,4 +16,4 @@ def fuzz_loop():
 if __name__ == "__main__":
     fuzz_loop()
 
-#Usage: $path/to/wordlist | ./ApiFuzzer.py
+#Usage: $cat wordlist.txt | python3 fuzzer.py 10.10.154.20
