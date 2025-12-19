@@ -8,7 +8,7 @@ def fuzz_loop(target_ip):
         try:
             res = requests.get(url)
             if res.status_code != 404:
-                print(f"[+] Found: {res.status_code} - /{word}")
+                print(f"[+] Found: {response.status_code} - /{word} - Data: {response.json()}")
         except requests.exceptions.RequestException as e:
             print(f"Error connecting: {e}")
             break
