@@ -28,6 +28,10 @@ Over the past year, I’ve been focused on mastering the fundamentals of penetra
 
 ---
 
+### Minor Projects
+-- **[Api Fuzzer(Automation using python)](https://github.com/brindhasham/Lab_PT/blob/main/ApiFuzzer.py)**
+-- **[Subdomain Hunter(Automation using python)](https://github.com/brindhasham/Lab_PT/blob/main/SubdomainHunter.py)**
+
 ### Tech Stack
 **Languages: Python, Bash, PowerShell**
 **Tools: Nmap, Burp Suite, Metasploit, Wireshark, BloodHound, Nessus, Responder**  
