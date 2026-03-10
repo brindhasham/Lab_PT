@@ -26,6 +26,8 @@ Over the past year, I’ve been focused on mastering the fundamentals of penetra
 
 -- **[Custom Phishing Payload with Anti-Detection Features](https://github.com/brindhasham/Lab_PT/tree/main/Custom%20Phishing%20Payload%20with%20Anti-Detection%20Features)**
 
+-- **AI-Powered Web Application Security Scanner and Bug Bounty assistant- In progress**
+
 ---
 
 ### Minor Projects
