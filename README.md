@@ -1,9 +1,3 @@
-#  Hi, I'm Brindha
-
- **Aspiring Junior Penetration Tester | eJPT | CompTIA Security+** | 
-
-**I'm passionate about ethical hacking, vulnerability research, and building secure systems.  
-Over the past year, I’ve been focused on mastering the fundamentals of penetration testing through labs, projects, and real-world simulations in controlled environments.**
 
 ###  Certifications
 -  **[![eJPT – INE](https://img.shields.io/badge/eJPT-Certified-2A81CB?style=for-the-badge&logo=Hack%20The%20Box&logoColor=white)](https://certs.ine.com/profile/sbrindha108174/wallet)**
@@ -42,14 +36,6 @@ Over the past year, I’ve been focused on mastering the fundamentals of penetra
 **Tools: Nmap, Burp Suite, Metasploit, Wireshark, BloodHound, Nessus, Responder**  
 **Platforms: Kali Linux, Windows, Windows Server, Ubuntu**  
 **Other: Git, Docker, VirtualBox**
-
----
-
-### Current Focus
-- **Practicing advanced labs on **TryHackMe** & **Hack The Box****
-- **Studying **Web App Security** & **Active Directory Exploitation/Defense****
-- **Preparing for **OSCP** (Offensive Security Certified Professional)-focused on manual exploitation, privilege escalation, and reporting**
-
 
 ---
 
